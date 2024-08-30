@@ -1,22 +1,35 @@
 function verificarNumeroPrimo(n) {
-    if (n <= 1) return false;
-    if (n === 2) return true;  
-    if (n % 2 === 0) return false; 
-    
-    for (let i = 3; i <= Math.sqrt(n); i += 2) {  //math.sqrt = raiz quadrada    ;     i += 2    soma de 2 em 2
-        if (n % i === 0) return false;
+    if (n < 1) {
+        return false;
+    }
+    //if (n = 1){
+    //    return false;
+   // }
+    if (n = 2){
+        return true;
+    }
+    if ((n > 2) && (n % 2 ==0)){
+        return false; 
+    }
+     
+    for (let i = 3; i < n; i += 2) { 
+        if (n % i == 0){ 
+        return false;
+    }
     }
     
     return true;
 }
 
-console.log(verificarNumeroPrimo(0));     
-console.log(verificarNumeroPrimo(1));      
-console.log(verificarNumeroPrimo(2));      
-console.log(verificarNumeroPrimo(3));      
-console.log(verificarNumeroPrimo(7));      
-console.log(verificarNumeroPrimo(83));     
-console.log(verificarNumeroPrimo(100));    
-console.log(verificarNumeroPrimo(991));    
-console.log(verificarNumeroPrimo(104729)); 
-console.log(verificarNumeroPrimo(14348907)); 
+
+
+console.log("0 = " + verificarNumeroPrimo(0));     
+console.log("1 = " + verificarNumeroPrimo(1));      
+console.log("2 = " + verificarNumeroPrimo(2));      
+console.log("3 = " + verificarNumeroPrimo(3));      
+console.log("7 = " + verificarNumeroPrimo(7));      
+console.log("83 = " + verificarNumeroPrimo(83));     
+console.log("100 = " + verificarNumeroPrimo(100));    
+console.log("991 = " +verificarNumeroPrimo(991));    
+console.log("104729 = " + verificarNumeroPrimo(104729)); 
+console.log("14348907 = " + verificarNumeroPrimo(14348907)); 
