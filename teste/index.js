@@ -1,4 +1,4 @@
-const letter_case = require('./letter_case/letter_case');
+const letter_case = require('../app_web1/letter_case/letter_case');
 
 let s1 = "AbCdE";
 

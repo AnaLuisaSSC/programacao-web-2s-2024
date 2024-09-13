@@ -19,7 +19,7 @@ app.get('/lower', function(req, res){
     res.send('hello');
 });
 
-const port = 8080;
-apply.listen(PORT, ()=>{
+const PORT = 8080;
+app.listen(PORT, ()=>{
     console.log('app rodando na porta' + PORT);
 });
