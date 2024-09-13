@@ -1,7 +1,25 @@
-const letter_case = require('./letter_case/letter_case');
+const lc = require('./letter_case/letter_case');
 
-let s1 = "AbCdE";
+//inporta o pacote express
+const express = require('express');
 
-console.log(lc.to_upper(s1));
-console.log(lc.to_lower(s1));
-console.log(lc.to_lower(1.5));
+//cria uma aplicaçÕ EXPRESS
+const app = express();
+
+app.get('/', function(req, res){
+    res.send('Hello, World');
+});
+
+app.get('/upper', function(req, res){
+       let word = req.params.n; 
+       res.send(lc.to_upper(word));
+}); 
+
+app.get('/lower', function(req, res){
+    res.send('hello');
+});
+
+const port = 8080;
+apply.listen(PORT, ()=>{
+    console.log('app rodando na porta' + PORT);
+});
