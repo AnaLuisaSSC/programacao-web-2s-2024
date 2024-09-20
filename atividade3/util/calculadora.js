@@ -1,17 +1,17 @@
 function somar(a,b) {
-    return a + b;
+    return Number(a) + Number(b);
 }
 
 function subitrair(a, b){
-    return a - b;
+    return Number(a) - Number(b);
 }
 
 function multiplicar(a, b){
-    return a * b;
+    return Number(a) * Number(b);
 }
 
 function dividir(a, b){
-    return a / b;
+    return Number(a) / Number(b); 
 }
 
 module.exports = {
