@@ -10,7 +10,7 @@ app.get('/', (req, res)=>{
      res.render('index.html');
 });
    
-const PORT = 8086;
+const PORT = 8087;
 app.listen(PORT, ()=>{
     console.log('app executando na porta' + PORT);
 });
