@@ -10,7 +10,16 @@ app.get('/', (req, res)=>{
      res.render('index.html');
 });
    
-const PORT = 8087;
+app.post('\dados', (req, res)=>{
+    let dados = {
+        nome: req.body.nome,
+        data_nascimento: red.boddy.data_nascimento,
+        descricao: req.body.descricao
+    };
+    res.send(dados);
+});
+
+const PORT = 8088;
 app.listen(PORT, ()=>{
     console.log('app executando na porta' + PORT);
 });
