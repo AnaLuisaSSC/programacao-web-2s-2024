@@ -11,6 +11,10 @@
         
         <div class="container">
             <div class="row mt-5">
+                
+            <div class="col-12">
+                <a href="/agendamentos" class="btn btn-link">Agendamentos</a>
+            </div>
 
                 {{#erro_form}}
                 <div class="col-6 offset-3">
@@ -27,12 +31,16 @@
                         <input type="text" class="form-control" name="nome" id="nome" value="{{nome}}">
                     </div>
                     <div class="col-6 offset-3 mt-3">
-                        <label for="data_nascimento" class="form-label">Data de nascimento:</label>
-                        <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" value="{{data_nascimento}}">
+                        <label for="endereco" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control" name="endereco" id="endereco" value="{{endereco}}">
                     </div>
                     <div class="col-6 offset-3 mt-3">
-                        <label for="descricao" class="form-label">Descrição:</label>
-                        <textarea name="descricao" id="descricao" class="form-control">{{descricao}}</textarea>
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" name="telefone" id="telefone" value="{{telefone}}">
+                    </div>
+                    <div class="col-6 offset-3 mt-3">
+                        <label for="data_agendamento" class="form-label">Data de agendamento:</label>
+                        <input type="date" class="form-control" name="data_agendamento" id="data_agendamento" value="{{data_agendamento}}">
                     </div>
                     <div class="col-6 offset-3 mt-3">
                         <button type="submit" class="w-100 btn btn-success">Enviar</button>
